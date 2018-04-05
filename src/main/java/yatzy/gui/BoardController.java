@@ -13,9 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
@@ -86,10 +84,10 @@ public class BoardController {
     private Button btnRoll;
 
     @FXML
-    private BorderPane rollingPane;
+    private VBox rollingPane;
 
     @FXML
-    private BorderPane scorePane;
+    private AnchorPane scorePane;
 
     @FXML
     public void initialize() {
@@ -413,7 +411,79 @@ public class BoardController {
             nextPlayer();
         } else {
             System.out.println("complete game");
+            completeGame();
         }
+    }
+
+    public void completeGame() { // todo clean up
+        /* sort based on total */
+        List<Player> sortedPlayers = new ArrayList<>();
+        for (Player player : players) {
+            int playerTotal = player.getScores().get(ScoreType.TOTAL);
+            int index = 0;
+            for (int i = 0; i < sortedPlayers.size(); i++) {
+                int sortedTotal = sortedPlayers.get(i).getScores().get(ScoreType.TOTAL);
+
+                if (playerTotal < sortedTotal) {
+                    index = i;
+                    break;
+                }
+                index = i + 1;
+            }
+            sortedPlayers.add(index, player);
+        }
+
+        GridPane gridPane = (GridPane) scorePane.getChildren().get(0);
+        double width = grid.getColumnConstraints().get(0).getPrefWidth();
+        double height = grid.getRowConstraints().get(0).getPrefHeight();
+
+        /* put in grid */
+        for (int row = 1; row <= sortedPlayers.size(); row++) {
+            for (int col = 0; col < 3; col++) {
+                int index = sortedPlayers.size() - row;
+
+                StackPane stackPane = new StackPane();
+                gridPane.add(stackPane, col, row);
+
+                Rectangle rectangle = new Rectangle();
+                rectangle.setWidth(width);
+                rectangle.setHeight(height);
+                rectangle.setFill(Color.web(colors[realPlayerIndex(sortedPlayers.get(index))]));
+                stackPane.getChildren().add(rectangle);
+
+                Label label = new Label();
+                String text = "";
+
+                switch (col) {
+                    case 0:
+                        text = String.format("#%d", row);
+                        break;
+                    case 1:
+                        text = sortedPlayers.get(index).getName();
+                        break;
+                    case 2:
+                        text += sortedPlayers.get(index).getScores().get(ScoreType.TOTAL);
+                        break;
+                    default:
+                        break;
+                }
+
+                label.setText(text);
+                stackPane.getChildren().add(label);
+            }
+        }
+
+        rollingPane.setVisible(false);
+        scorePane.setVisible(true);
+    }
+
+    private int realPlayerIndex(Player player) {
+        for (int i = 0; i < players.size(); i++) {
+            if (player.equals(players.get(i))) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     private void nextScoreType() {
@@ -550,6 +620,9 @@ public class BoardController {
 
         clearBoard();
         setupBoard();
+
+        scorePane.setVisible(false);
+        rollingPane.setVisible(true);
     }
 
     private void clearBoard() {

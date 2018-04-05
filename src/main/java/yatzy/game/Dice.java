@@ -1,4 +1,4 @@
-package yatzy;
+package yatzy.game;
 
 public class Dice {
     private Die[] dice = new Die[5];
@@ -9,18 +9,24 @@ public class Dice {
         }
     }
 
+    public Die getDie(int index) {
+        return dice[index];
+    }
+
     public Die[] getDice() {
         return dice;
     }
 
     public void roll() {
         for (Die die : dice) {
-            die.roll();
+            if (!die.isSelected()) {
+                die.roll();
+            }
         }
     }
 
-    public int[] getFaceValues() {
-        int[] faceValues = new int[dice.length];
+    public FaceValue[] getFaceValues() {
+        FaceValue[] faceValues = new FaceValue[dice.length];
         for (int i = 0; i < faceValues.length; i++) {
             faceValues[i] = dice[i].getFaceValue();
         }

@@ -1,4 +1,4 @@
-package yatzy.gui;
+package yatzy;
 
 import javafx.animation.ParallelTransition;
 import javafx.animation.PauseTransition;
@@ -595,7 +595,7 @@ public class BoardController {
     }
 
     public void goToMenu(Event event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../menu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
 
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);

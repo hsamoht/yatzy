@@ -1,4 +1,4 @@
-package yatzy.gui;
+package yatzy;
 
 import javafx.beans.binding.Bindings;
 import javafx.event.Event;
@@ -93,7 +93,7 @@ public class MenuController {
     public void playGame(Event event) throws IOException {
         List<Player> players = setupPlayers();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../game.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("game.fxml"));
 
         Parent parent = fxmlLoader.load();
         BoardController boardController = fxmlLoader.getController();

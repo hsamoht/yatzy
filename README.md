@@ -35,7 +35,7 @@ The player with the highest total score wins the game.
 | Yatzy | All dice being the same | 50 | <img src="/src/main/resources/yatzy/images/die2.png" width="30" height="30" alt="2"/><img src="/src/main/resources/yatzy/images/die2.png" width="30" height="30" alt="2"/><img src="/src/main/resources/yatzy/images/die2.png" width="30" height="30" alt="2"/><img src="/src/main/resources/yatzy/images/die2.png" width="30" height="30" alt="2"/><img src="/src/main/resources/yatzy/images/die2.png" width="30" height="30" alt="2"/> = 50 | 50
 
 ### Alternative mode
-An alternative mode is playing with a forced sequence where the players **must** place the scores in the same sequence as they appear on the board. * In this mode the players only need to reach 42 points in the upper section to be awarded the bonus.
+An alternative mode is playing with forced sequence. Here players **must** place the scores in the same sequence as they appear on the board. If the player is unable to throw a valid dice combination the score must be sacrificed. * In this mode the players only need to reach 42 points in the upper section to be awarded the bonus.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

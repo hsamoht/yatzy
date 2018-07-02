@@ -1,4 +1,6 @@
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Travis CI](https://travis-ci.org/hsamoht/yatzy.svg?branch=master)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 
 # Yatzy!
 <img align="right" width="50%" height="50%" src="https://i.imgur.com/D8lmqYY.gif">

@@ -1,8 +1,3 @@
-group 'yatzy'
-version '0.1.1'
-
-apply plugin: 'java'
-
 plugins {
     id 'jacoco'
     id 'com.github.kt3k.coveralls' version '2.6.3'
@@ -14,6 +9,11 @@ jacocoTestReport {
         html.enabled = true
     }
 }
+
+group 'yatzy'
+version '0.1.1'
+
+apply plugin: 'java'
 
 sourceCompatibility = 1.8
 

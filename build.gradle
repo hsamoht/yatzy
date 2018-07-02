@@ -2,9 +2,11 @@
 group 'yatzy'
 version '0.1.1'
 
-apply plugin: 'java'
-apply plugin: 'jacoco'
-apply plugin: 'com.github.kt3k.coveralls'
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+}
 
 jacocoTestReport {
     reports {

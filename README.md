@@ -50,5 +50,20 @@ The player with the highest total score wins the game.
 ### Alternative mode
 An alternative mode is playing with forced sequence. Here players **must** place the scores in the same sequence as they appear on the board. If the player is unable to throw a valid dice combination the score must be sacrificed. * In this mode the players only need to reach 42 points in the upper section to be awarded the bonus.
 
+## Getting started
+
+### Installation
+There is no installation required! Simply download the fat-jar from latest [releases](https://github.com/hsamoht/yatzy/releases) and run it as an executable. 
+
+Requirements:
+- JRE 1.8 or later.
+
+### Development setup
+Clone the project to your local machine. Open it in your IDE as an existing Gradle project and build the root module.
+
+Requirements:
+- JDK 1.8 or later.
+- Gradle 4.0 or later.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

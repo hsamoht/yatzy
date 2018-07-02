@@ -19,7 +19,7 @@
 A simple JavaFX application to play the game of Yatzy!
 
 ## Gameplay
-[Yatzy](https://en.wikipedia.org/wiki/Yatzy) is a dice game where one to any number of players take turn rolling five dices. 
+[Yatzy](https://en.wikipedia.org/wiki/Yatzy) is a dice game where one to any number of players take turn rolling five dice. 
 
 After each roll, the player chooses which dice to keep, and which to reroll. A player may reroll some or all of the dice up to two times each turn.
 

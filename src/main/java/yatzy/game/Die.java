@@ -6,7 +6,7 @@ public class Die {
     private static int MAXIMUM_FACE_NUMBER = FaceValue.values().length;
 
     private FaceValue faceValue;
-    private boolean selected;
+    private boolean selected = false;
 
     public FaceValue getFaceValue() {
         return faceValue;

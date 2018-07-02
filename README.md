@@ -1,7 +1,15 @@
-![Travis CI](https://travis-ci.org/hsamoht/yatzy.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/hsamoht/yatzy/badge.svg?branch=master)](https://coveralls.io/github/hsamoht/yatzy?branch=master)
-[![GitHub Release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/hsamoht/yatzy/releases)
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+<p align="center">
+   <img src="https://travis-ci.org/hsamoht/yatzy.svg?branch=master" alt="Travis CI" />
+  <a href="https://coveralls.io/github/hsamoht/yatzy?branch=master">
+    <img src="https://coveralls.io/repos/github/hsamoht/yatzy/badge.svg?branch=master" alt="Coverage" />
+  </a>
+  <a href="https://github.com/hsamoht/yatzy/releases">
+    <img src="https://img.shields.io/badge/release-v0.1.0-blue.svg" alt="Releases" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Releases" />
+  </a>
+</p>
 
 # Yatzy!
 <img align="right" width="50%" height="50%" src="https://i.imgur.com/D8lmqYY.gif">

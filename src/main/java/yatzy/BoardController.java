@@ -31,6 +31,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+/**
+ * Controls the gameplay GUI
+ */
 public class BoardController {
     private static int MAX_ROLLS = 3;
     private static int MIN_ROLLS = 0;

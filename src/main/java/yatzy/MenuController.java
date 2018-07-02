@@ -17,6 +17,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Controls the GUI Menu
+ */
 public class MenuController {
     private TextField[] playerNames;
 

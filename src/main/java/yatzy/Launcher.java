@@ -9,6 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Main entry point of the application
+ */
 public class Launcher extends Application {
     public static void main(String[] args) {
         launch(args);

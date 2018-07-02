@@ -1,5 +1,8 @@
 package yatzy.game;
 
+/**
+ * Represents the Yatzy game board categories
+ */
 public enum ScoreType {
     ONES,
     TWOS,
@@ -22,6 +25,10 @@ public enum ScoreType {
 
     private static ScoreType[] scoreTypes = values();
 
+    /**
+     * Gets the next score type (following the list and looping at the end)
+     * @return the next ScoreType
+     */
     public ScoreType next() {
         return scoreTypes[(this.ordinal() + 1) % scoreTypes.length];
     }

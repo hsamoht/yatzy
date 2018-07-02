@@ -113,6 +113,10 @@ public class BoardController {
         return PLAYING_FORCED ? 42 : 63;
     }
 
+    /**
+     * Select which game mode to play
+     * @param isForced true if playing forced, else false
+     */
     public void setGameMode(boolean isForced) {
         PLAYING_FORCED = isForced;
     }
@@ -188,6 +192,9 @@ public class BoardController {
         highlightCurrentPlayer();
     }
 
+    /**
+     * Set the player whos turn is next
+     */
     private void nextPlayer() {
         Player lastPlayer = players.get(players.size() - 1);
         currentPlayerIndex = lastPlayer == currentPlayer() ? 0 : currentPlayerIndex + 1;
@@ -198,10 +205,17 @@ public class BoardController {
         }
     }
 
+    /**
+     * Get the current player
+     * @return the current player
+     */
     private Player currentPlayer() {
         return players.get(currentPlayerIndex);
     }
 
+    /**
+     * Highlight the name of the current player in the GUI
+     */
     private void highlightCurrentPlayer() {
         for (int i = 0; i < players.size(); i++) {
             int column = playerToColumnIndex(players.get(i));
@@ -218,6 +232,10 @@ public class BoardController {
         }
     }
 
+    /**
+     * Update the display of the scores in the given players score boxes
+     * @param player to update scores
+     */
     private void updatePlayerCells(Player player) {
         int column = playerToColumnIndex(player);
         Map<ScoreType, Integer> scores = player.getScores();

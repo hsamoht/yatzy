@@ -1,4 +1,4 @@
-package yatzy.game;
+package com.github.hsamoht.yatzy.game;
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -204,7 +204,7 @@ public class ScoreCalculator {
     }
 
     /**
-     * Check if the face values equals a yatzy
+     * Check if the face values equals a com.github.hsamoht.yatzy
      * @return 50 if true, else 0
      */
     public int yatzy() {

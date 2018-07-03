@@ -1,4 +1,4 @@
-package yatzy.game;
+package com.github.hsamoht.yatzy.game;
 
 import java.util.EnumMap;
 import java.util.Map;

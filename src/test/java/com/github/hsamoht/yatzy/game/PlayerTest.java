@@ -1,4 +1,4 @@
-package yatzy.game;
+package com.github.hsamoht.yatzy.game;
 
 import org.junit.Test;
 

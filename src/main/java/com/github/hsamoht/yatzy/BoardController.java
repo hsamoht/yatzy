@@ -1,4 +1,4 @@
-package yatzy;
+package com.github.hsamoht.yatzy;
 
 import javafx.animation.ParallelTransition;
 import javafx.animation.PauseTransition;
@@ -18,12 +18,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import yatzy.game.Dice;
-import yatzy.game.Die;
-import yatzy.game.FaceValue;
-import yatzy.game.Player;
-import yatzy.game.ScoreCalculator;
-import yatzy.game.ScoreType;
+import com.github.hsamoht.yatzy.game.Dice;
+import com.github.hsamoht.yatzy.game.Die;
+import com.github.hsamoht.yatzy.game.FaceValue;
+import com.github.hsamoht.yatzy.game.Player;
+import com.github.hsamoht.yatzy.game.ScoreCalculator;
+import com.github.hsamoht.yatzy.game.ScoreType;
 
 import java.io.IOException;
 import java.util.ArrayList;

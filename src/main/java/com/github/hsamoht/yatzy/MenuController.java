@@ -1,4 +1,4 @@
-package yatzy;
+package com.github.hsamoht.yatzy;
 
 import javafx.beans.binding.Bindings;
 import javafx.event.Event;
@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import yatzy.game.Player;
+import com.github.hsamoht.yatzy.game.Player;
 
 import java.io.IOException;
 import java.util.ArrayList;

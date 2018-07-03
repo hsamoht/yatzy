@@ -1,4 +1,4 @@
-package yatzy;
+package com.github.hsamoht.yatzy;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

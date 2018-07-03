@@ -4,9 +4,6 @@ plugins {
     id 'com.github.kt3k.coveralls' version '2.6.3'
 }
 
-group 'yatzy'
-version '0.1.1'
-
 jacocoTestReport {
     reports {
         xml.enabled = true // coveralls plugin depends on xml format report
@@ -14,7 +11,9 @@ jacocoTestReport {
     }
 }
 
-sourceCompatibility = 1.8
+group = theGroup
+version = theVersion
+sourceCompatibility = theSourceCompatibility
 
 repositories {
     mavenCentral()
@@ -26,9 +25,9 @@ dependencies {
 
 task fatJar(type: Jar) {
     manifest {
-        attributes "Main-Class": "yatzy.Launcher"
+        attributes "Main-Class": "com.github.hsamoht.yatzy.Launcher"
     }
-    baseName = 'yatzy'
+    baseName = theName
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }

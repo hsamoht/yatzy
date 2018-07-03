@@ -1,15 +1,15 @@
 <p align="center">
    <a href="https://travis-ci.org/hsamoht/yatzy">
-      <img src="https://travis-ci.org/hsamoht/yatzy.svg?branch=master" alt="Travis CI" />
+      <img src="https://travis-ci.org/hsamoht/yatzy.svg?branch=master" alt="TravisCI" />
    </a>
    <a href="https://coveralls.io/github/hsamoht/yatzy?branch=master">
-      <img src="https://coveralls.io/repos/github/hsamoht/yatzy/badge.svg?branch=master" alt="Coverage" />
+      <img src="https://coveralls.io/repos/github/hsamoht/yatzy/badge.svg?branch=master" alt="Coveralls" />
    </a>
    <a href="https://github.com/hsamoht/yatzy/releases">
       <img src="https://img.shields.io/badge/release-v0.1.0-blue.svg" alt="Releases" />
    </a>
    <a href="LICENSE">
-      <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Releases" />
+      <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
    </a>
 </p>
 
